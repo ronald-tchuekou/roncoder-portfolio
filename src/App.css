@@ -4,8 +4,25 @@
     box-sizing: border-box;
 }
 
-.box {
-    width: 200px;
-    height: 200px;
-    background: #148ba6;
+body {
+    font-family: 'Poppins', serif;
+    @apply bg-primary-dark
+}
+
+.nav-item {
+    transition: 300ms;
+    @apply text-white text-base font-medium hover:text-primary-light
+}
+
+.nav-item.active {
+    @apply text-primary-light
+}
+
+.nav-item a {
+    @apply block text-inherit py-3 px-2
+}
+
+.nav-indicator {
+    transition: 300ms;
+    @apply absolute bottom-0 left-0 w-20 h-1 rounded-full bg-primary-light
 }
