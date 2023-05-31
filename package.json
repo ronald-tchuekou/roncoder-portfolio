@@ -1,5 +1,6 @@
 {
   "name": "roncoder-portfolio",
+  "description": "Ronald Tchuekou portfolio.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
