@@ -14,7 +14,8 @@ body {
     @apply text-white text-base font-medium hover:text-primary-light
 }
 
-.nav-item.active {
+.nav-item.active,
+.phone-nav-content .phone-nav-item.active {
     @apply text-primary-light
 }
 
@@ -25,4 +26,34 @@ body {
 .nav-indicator {
     transition: 300ms;
     @apply absolute bottom-0 left-0 w-20 h-1 rounded-full bg-primary-light
+}
+
+.nav-btn {
+    transition: 300ms;
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    @apply flex gap-3 rounded-full bg-primary-light text-white text-base font-medium px-5 py-2
+}
+
+.bg-btn {
+    background: linear-gradient(94.01deg, #31AFB4 0.07%, #ED8074 100.07%);
+    @apply hover:shadow-lg hover:shadow-primary/50 active:shadow-none
+}
+
+/* Phone menu */
+
+.phone-nav-content {
+    width: 100vw;
+    height: 100vh;
+    @apply bg-primary-dark border-t border-primary/40
+}
+
+.phone-nav-content .phone-nav-item {
+    transition: 300ms;
+    @apply text-white text-base font-medium hover:text-primary-light
+}
+
+.phone-nav-item a {
+    @apply flex flex-row justify-between items-center text-inherit py-3 px-5
 }

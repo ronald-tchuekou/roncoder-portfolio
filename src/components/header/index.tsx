@@ -1,35 +1,14 @@
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
+import React, {FC, useCallback, useEffect, useState} from 'react';
 import Container from "../container";
-import ToggleMenu from "./toggle-menu";
 import {motion, useCycle} from "framer-motion";
-import {useDimensions} from "../../hooks/use-dimensions";
+import PhoneMenu from "./phone-menu";
+import ToggleMenu from "./toggle-menu";
+import ButtonDownloadCv from "../button-download-cv";
 
 const hashtags = ["#presentation", "#skills", "#experiences", "#portfolio", "#contact"]
 
-const sidebar = {
-    open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-        transition: {
-            type: "spring",
-            stiffness: 20,
-            restDelta: 2
-        }
-    }),
-    closed: {
-        clipPath: "circle(30px at 40px 40px)",
-        transition: {
-            delay: 0.5,
-            type: "spring",
-            stiffness: 400,
-            damping: 40
-        }
-    }
-};
-
 const Header: FC = () => {
     const [isOpen, toggleOpen] = useCycle(false, true);
-    const containerRef = useRef(null);
-    const {height} = useDimensions(containerRef);
 
     const [hashtag, setHashtag] = useState<string>("")
     const moveIndicator = useCallback(
@@ -90,27 +69,25 @@ const Header: FC = () => {
     )
 
     return (
-        <header className={`w-full`}>
+        <motion.header
+            initial={false}
+            animate={isOpen ? "open" : "closed"}
+            className={`fixed top-0 left-0 right-0 w-full z-10 bg-primary-dark/40 backdrop-blur`}>
             <Container>
-                <div className={"flex flex-row justify-between items-center py-5"}>
+                <div className={"flex flex-row justify-between items-center py-3 md:py-5"}>
                     <a href={"/"}>
                         <img
                             className={"aspect-auto w-36"}
                             src={"/line-logo.png"}
                             alt={"Roncoder logo"}/>
                     </a>
-                    <motion.nav
-                        initial={false}
-                        animate={isOpen ? "open" : "closed"}
-                        custom={height}
-                        ref={containerRef}
-                        className={"flex-none flex flex-row gap-5 items-center relative"}>
+                    <nav className={"flex-none flex flex-row gap-5 items-center relative"}>
                         <div className={"hidden lg:block nav-indicator"}></div>
-                        <ul className={"hidden lg:flex flex-row gap-5 items-center"}>
-                            <li className={`nav-item ${hashtag === '#presentation' ? 'active' : ''}`}>
+                        <ul className={"hidden md:flex flex-row gap-5 items-center"}>
+                            <li className={`md:hidden lg:block nav-item ${hashtag === '#presentation' ? 'active' : ''}`}>
                                 <a href={"#presentation"}>Présentation</a>
                             </li>
-                            <li className={`nav-item ${hashtag === '#skills' ? 'active' : ''}`}>
+                            <li className={`md:hidden lg:block nav-item ${hashtag === '#skills' ? 'active' : ''}`}>
                                 <a href={"#skills"}>Compétences</a>
                             </li>
                             <li className={`nav-item ${hashtag === '#experiences' ? 'active' : ''}`}>
@@ -123,14 +100,18 @@ const Header: FC = () => {
                                 <a href={"#contact"}>Contact</a>
                             </li>
                         </ul>
-                        <button className={"hidden md:block rounded-full bg-primary-light text-white text-base font-medium px-5 py-3"}>
-                            Télécharger mon CV
-                        </button>
-                        <ToggleMenu toggle={() => toggleOpen()}/>
-                    </motion.nav>
+                        <div className={"hidden md:block"}>
+                            <ButtonDownloadCv title={'Mon CV'}/>
+                        </div>
+                        <ToggleMenu toggle={toggleOpen}/>
+                    </nav>
                 </div>
             </Container>
-        </header>
+            <PhoneMenu
+                setHashtag={setHashtag}
+                hashtag={hashtag}
+                toggle={toggleOpen}/>
+        </motion.header>
     );
 };
 
