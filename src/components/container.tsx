@@ -4,7 +4,7 @@ type ContainerProps = {
     maxWidth?: number
 };
 
-export const Container: FC<PropsWithChildren<ContainerProps>> = (props) => {
+const Container: FC<PropsWithChildren<ContainerProps>> = (props) => {
     const {children, maxWidth = 1400} = props
 
     return (
