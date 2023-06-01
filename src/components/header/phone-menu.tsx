@@ -74,7 +74,7 @@ const PhoneMenu = (props: PhoneMenuProps) => {
             className="phone-nav-content"
             variants={sidebar}>
             <motion.ul
-                className={"w-full divide-y divide-gray-500/40"}
+                className={"w-full pt-4"}
                 variants={NavVariants}>
                 {menuContent.map(item => (
                     <motion.li

@@ -1,15 +1,14 @@
 import React from "react"
 import './App.css'
 import Header from "./components/header";
+import Banner from "./components/banner";
 
 function App() {
     return (
         <>
             <Header/>
+            <Banner/>
             <div className={"h-96"}/>
-            <div
-                style={{height: 2000, width: 300}}
-                className={"bg-primary m-5"}></div>
         </>
     )
 }

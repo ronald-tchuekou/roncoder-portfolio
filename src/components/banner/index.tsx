@@ -1,0 +1,49 @@
+import React from 'react';
+import {BannerIllustrationSvg} from "../../assets/svg";
+import Container from "../container";
+import ButtonDownloadCv from "../button-download-cv";
+import BGContainer from "../bg-container";
+import Space from "../space";
+
+const Banner = () => {
+    return (
+        <div className={"relative w-full"}>
+            <div className={"absolute top-0 left-0 right-0 -z-10"}>
+                <BGContainer>
+                    <div className={"w-full flex flex-col md:flex-row justify-end"}>
+                        <BannerIllustrationSvg className={"w-full md:w-1/2"}/>
+                    </div>
+                </BGContainer>
+            </div>
+            <Container>
+                <div className={"w-full flex flex-col-reverse md:flex-row md:items-end"}>
+                    <div className={"w-full md:w-2/3 py-5 md:py-10"}>
+                        <h1 className={"text-2xl md:text-3xl lg:text-4xl font-bold text-white"}>
+                            Salut !<br/>
+                            Moi c’est <span className={"text-accent"}>Ronald Tchuekou</span>
+                        </h1>
+                        <Space/>
+                        <p className={"text-gray-200 text-base md:text-lg lg:text-2xl"}>
+                            Développeur d’applications
+                            web et mobile, UI/UX Designer, Administrateur
+                            système (linux)
+                        </p>
+                        <Space height={20}/>
+                        <p className={"text-gray-200 text-base md:text-lg lg:text-2xl"}>
+                            Passionné du web design et tout son
+                            écosystème, mon slogan est: <span className={"text-primary-light"}>`Le bon travail, valorise
+                                la personnalité et construit un avenir meilleur.`</span>
+                        </p>
+                        <Space/>
+                        <ButtonDownloadCv title={"Télécharger mon CV"}/>
+                    </div>
+                    <div className={"w-full md:w-1/2 invisible"}>
+                        <BannerIllustrationSvg className={"w-full"}/>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    );
+};
+
+export default Banner
