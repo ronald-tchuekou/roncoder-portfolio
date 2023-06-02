@@ -13,33 +13,33 @@ const Skills = () => {
         {
             title: "Langages",
             skills: [
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 1},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 2},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 3},
             ]
         },
         {
             title: "Frameworks",
             skills: [
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 4},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 5},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 6},
             ]
         },
         {
             title: "Design",
             skills: [
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 7},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 8},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 9},
             ]
         },
         {
             title: "Autres",
             skills: [
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
-                {title: "TypeScript", experience: "3 ans d'expérience", tech: []},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 1},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 4},
+                {title: "TypeScript", experience: "3 ans d'expérience", tech: [], note: 7},
             ]
         },
     ]
