@@ -57,3 +57,32 @@ body {
 .phone-nav-item a {
     @apply flex flex-row justify-between items-center text-inherit py-3 px-5
 }
+
+.title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold
+}
+
+.text {
+    @apply text-base md:text-lg lg:text-2xl
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    @apply px-6 py-4 rounded-3xl relative
+}
+
+.skill-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(96.81deg, #31AFB4 4.51%, #ED8074 97.39%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    @apply border-2 border-transparent rounded-3xl
+}
