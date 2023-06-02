@@ -1,5 +1,4 @@
 import React from 'react';
-import {getGray} from "../../utils";
 
 const CONTENT = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -10,15 +9,13 @@ type SkillNoteProps = {
 const SkillNote = (props: SkillNoteProps) => {
     const {note} = props
 
-    const value = (note / 10) * 100
-
     return (
         <div className={"flex flex-row justify-between gap-1 sm:gap-3 w-full max-w-[250px]"}>
             {CONTENT.map(item => (
                 <Indicator
                     key={item}
                     index={item}
-                    value={value}/>
+                    value={note}/>
             ))}
         </div>
     );
@@ -32,8 +29,14 @@ type IndicatorProps = {
 const Indicator = (props: IndicatorProps) => {
     const {value, index} = props
 
+    const opacity = (index > (value * 2))
+        ? (value / (index * 5))
+        : (index > value)
+            ? (value / (index * 3))
+            : (value / index)
+
     const style = {
-        background: getGray(index, value)
+        background: `rgba(255, 255, 255, ${opacity === 0 ? 0.1 : opacity})`
     }
 
     return <div
