@@ -7,12 +7,19 @@ import SkillModel from "../../models/skill.model";
 import {
     AdobeSvg,
     AngularSvg,
-    CSSSvg, DevOpsSvg,
-    ExpressSvg, FigmaSvg, FirebaseSvg, GitSvg,
+    CSSSvg,
+    DevOpsSvg,
+    ExpressSvg,
+    FigmaSvg,
+    FirebaseSvg,
+    GitSvg,
     HTMLSvg,
-    JavaScriptSvg, MongoDBSvg,
+    JavaScriptSvg,
+    MongoDBSvg,
     PhpSvg,
-    ReactSvg, ReduxSvg, TailwindCssSvg,
+    ReactSvg,
+    ReduxSvg,
+    TailwindCssSvg,
     TypeScriptSvg
 } from "../../assets/svg";
 
@@ -181,7 +188,9 @@ const Skills = () => {
     ]
 
     return (
-        <section className={"relative w-full py-10 md:py-20"}>
+        <section
+            id={"skills"}
+            className={"relative w-full py-10 md:py-20"}>
             <BGSkills/>
             <Container>
                 <div className={"w-full"}>

@@ -7,6 +7,7 @@ const BGSkills = () => {
         <div className={"absolute inset-0 -z-10"}>
             <BGContainer>
                 <div className={"w-full"}>
+                    <div className={"bg-flue aspect-square w-4/5 top-1/2 left-0"}/>
                     <Skill1Svg className={"absolute -top-10 left-5 min-w-[150px] w-1/6"}/>
                     <Skill2Svg className={"absolute top-32 right-5 w-1/6"}/>
                     <div className={"absolute top-1/4 left-0 w-full overflow-x-hidden"}>
