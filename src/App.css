@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', serif;
-    @apply bg-primary-dark overflow-x-hidden
+    @apply bg-primary-dark
 }
 
 .nav-item {
@@ -85,4 +85,11 @@ body {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     @apply border-2 border-transparent rounded-3xl
+}
+
+.bg-flue {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(49, 175, 180, 0.13) 0%, rgba(20, 33, 45, 0.2) 100%);
+    background-blend-mode: soft-light;
+    filter: blur(25px);
 }

@@ -1,11 +1,8 @@
-import {ReactElement} from "react";
-
-type  SkillModel = {
-    theme?: "accent" | "primary";
-    title: string
-    experience: string
-    note: number
-    tech: Array<ReactElement>
+type  ExperienceModel = {
+    poste: string
+    company: string
+    date: string
+    task: Array<string>
 }
 
-export default SkillModel
+export default ExperienceModel

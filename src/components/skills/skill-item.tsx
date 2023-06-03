@@ -12,7 +12,7 @@ const SkillItem: React.FC<SkillItemProps> = (props) => {
 
     return (
         <div className={"relative skill-item flex flex-col gap-3 mt-3"}>
-            <h2 className={`text-xl font-bold ${skill.theme === 'accent' ? 'text-accent' : 'text-primary-light'}`}>
+            <h2 className={`text-lg md:text-xl font-medium ${skill.theme === 'accent' ? 'text-accent' : 'text-primary-light'}`}>
                 {skill.title}
             </h2>
             <SkillNote note={skill.note}/>

@@ -7,7 +7,7 @@ import BGBanner from "./bg-banner ";
 
 const Banner = () => {
     return (
-        <section className={"relative w-full"}>
+        <section id={"presentation"} className={"relative w-full"}>
             <BGBanner/>
             <Container>
                 <div className={"w-full flex flex-col-reverse md:flex-row md:items-end"}>
