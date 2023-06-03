@@ -6,6 +6,7 @@ import Skills from "./components/skills";
 import Experiences from "./components/experiences";
 import Space from "./components/space";
 import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
 
 function App() {
     return (
@@ -19,7 +20,8 @@ function App() {
             <Experiences/>
             <Space/>
             <Portfolio/>
-            <div className={"h-96"}/>
+            <Space/>
+            <Contact/>
         </>
     )
 }
