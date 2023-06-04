@@ -43,13 +43,13 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
                     <a href={portfolio.links[0]}>
                         <img
                             src={"/appstore.png"}
-                            className={"aspect-auto h-6 md:h-8"}
+                            className={"aspect-auto h-8 md:h-10"}
                             alt={"AppStore"}/>
                     </a>
                     <a href={portfolio.links[1]}>
                         <img
                             src={"/playstore.png"}
-                            className={"aspect-auto h-6 md:h-8"}
+                            className={"aspect-auto h-8 md:h-10"}
                             alt={"PlayStore"}/>
                     </a>
                 </div>

@@ -73,7 +73,7 @@ const Header: FC = () => {
             <motion.header
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
-                className={`fixed top-0 left-0 right-0 w-full z-10 bg-primary-dark/40 backdrop-blur`}>
+                className={`fixed top-0 left-0 right-0 w-screen z-10 bg-primary-dark/40 backdrop-blur`}>
                 <Container>
                     <div className={"flex flex-row justify-between items-center py-3 md:py-5"}>
                         <a href={"/"}>

@@ -10,7 +10,7 @@ const BGContainer: FC<PropsWithChildren<BGContainerProps>> = (props) => {
     return (
         <div
             style={{maxWidth}}
-            className={`w-full m-auto`}>
+            className={`w-full h-full m-auto`}>
             {children}
         </div>
     );

@@ -14,7 +14,10 @@ const Portfolio = () => {
             description: "Bigoodee est une plateforme de réservation de coiffeuses en ligne. C’est une application qui permet aux coiffeuses afro de vendre leurs prestations et permet aux clients de faire des réservation de prestations et être coiffer soit à domicile, soit dans un point de rendez-vous.",
             owner: "AGYL TECH",
             type: "mobile",
-            links: ["", ""]
+            links: [
+                "https://apps.apple.com/cm/app/bigoodee/id1660025836?l=fr",
+                "https://play.google.com/store/apps/details?id=com.agyl.bigoodee"
+            ]
         },
         {
             image: "/apps/les_vadrouilleurs-mobile-illustration.png",
@@ -22,7 +25,10 @@ const Portfolio = () => {
             description: "Les vadrouilleurs est une application mobile qui permet de faire des parcours de jeux de piste et de randonné. C’est une application qui intègre une carte personnalisé permettant de suivre ça position et de découvrir les balises d’un parcours.",
             owner: "AGYL TECH",
             type: "mobile",
-            links: ["", ""]
+            links: [
+                "https://apps.apple.com/cm/app/les-vadrouilleurs/id1634201497?l=fr",
+                "https://play.google.com/store/search?q=les%20vadrouilleurs&c=apps"
+            ]
         },
         {
             image: "/apps/bigoodee-web-illustration.png",

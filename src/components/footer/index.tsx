@@ -1,20 +1,23 @@
 import React from 'react';
-import Container from "./container";
-import Space from "./space";
-import {GithubSvg, LinkedInSvg, MailSvg, TwitterSvg, WhatsappSvg} from "../assets/svg";
+import {GithubSvg, LinkedInSvg, MailSvg, TwitterSvg, WhatsappSvg} from "../../assets/svg";
+import Container from "../container";
+import Space from "../space";
+import BGFooter from "./bg-footer";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className={"relative w-full"}>
+            <BGFooter/>
             <Container>
-                <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"}>
+                <Space/>
+                <div className={"grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"}>
                     <div>
                         <img
                             src={"/col-logo.png"}
                             alt={"roncoder logo"}
                             className={"aspect-auto w-24 m-auto"}/>
                         <Space height={25}/>
-                        <p className={"text-foot"}>
+                        <p className={"text-foot text-center max-w-[300px] md:max-w-full"}>
                             `Le bon travail, valorise la personnalité et construit un avenir meilleur.`
                         </p>
                     </div>
