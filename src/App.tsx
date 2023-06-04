@@ -7,6 +7,7 @@ import Experiences from "./components/experiences";
 import Space from "./components/space";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             <Portfolio/>
             <Space/>
             <Contact/>
+            <Footer/>
         </>
     )
 }
