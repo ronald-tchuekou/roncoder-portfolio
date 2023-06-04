@@ -36,7 +36,7 @@ body {
     @apply flex gap-3 rounded-full bg-primary-light text-white text-base font-medium px-5 py-2
 }
 
-.btn  {
+.btn {
     transition: 300ms;
     z-index: 50;
     @apply rounded-xl bg-primary-light text-white text-sm md:text-base font-medium px-5 py-2
@@ -69,7 +69,16 @@ body {
 }
 
 .text {
-    @apply text-base md:text-lg lg:text-2xl
+    @apply text-base md:text-lg lg:text-2xl text-gray-400
+}
+
+.text-foot {
+    @apply text-base md:text-lg text-gray-300
+}
+
+.link {
+    transition: 300ms;
+    @apply text-sm md:text-base text-gray-400 hover:text-primary-flight px-2 py-1
 }
 
 .skill-item {
