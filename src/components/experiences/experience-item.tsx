@@ -24,7 +24,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = (props) => {
             <div className={"text-base font-semibold text-gray-200"}>Tâches :</div>
             <ul className={"list-disc text-gray-400 font-light pl-8"}>
                 {experience.task.map((item, i) => (
-                    <li key={`task-${i}`} className={"pt-2"}>{item}</li>
+                    <li key={`task-${i}`} className={"pt-2 text-xs sm:text-sm"}>{item}</li>
                 ))}
             </ul>
         </div>
