@@ -10,7 +10,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
 
     return (
         <div className={"relative skill-item flex flex-col gap-3 mt-3 z-0"}>
-            <div className={"w-full overflow-hidden rounded-lg"}>
+            <div className={"w-full overflow-hidden rounded-lg pt-3 px-2"}>
                 <img
                     src={portfolio.image}
                     className={"aspect-auto w-full"}
@@ -18,15 +18,15 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
             </div>
             <h2 className={`text-lg md:text-xl font-normal ${
                 portfolio.type === 'web' ? 'text-accent' : 'text-primary-light'
-            }`}>
+            } px-2`}>
                 {portfolio.title}
             </h2>
-            <p className={"text-sm md:text-base text-gray-300"}>
+            <p className={"text-sm md:text-base text-gray-300 px-2"}>
                 {portfolio.description}
             </p>
             <div className={`w-full flex flex-row ${
                 (portfolio.type === "web" && portfolio.links[0]) ? "justify-between" : "justify-center"
-            } items-center`}>
+            } items-center px-2`}>
                 <div className={"uppercase text-gray-500 text-center"}>
                     {portfolio.owner}
                 </div>
@@ -39,7 +39,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
                 ) : null}
             </div>
             {portfolio.type === "mobile" ? (
-                <div className={"w-full flex flex-row justify-between"}>
+                <div className={"w-full flex flex-row justify-between px-2 pb-3"}>
                     <a href={portfolio.links[0]}>
                         <img
                             src={"/appstore.png"}
