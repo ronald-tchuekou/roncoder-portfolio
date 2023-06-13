@@ -3,13 +3,15 @@ import {motion} from "framer-motion";
 
 type ButtonProps = {
     title: string
+    loading?: boolean
 };
 
 const Button = (props: ButtonProps) => {
-    const {title} = props
+    const {title, loading} = props
 
     return (
         <motion.button
+            disabled={loading}
             whileHover={{scale: 1.02}}
             whileTap={{scale: 0.95}}
             className={"btn bg-btn"}>

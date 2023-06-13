@@ -36,7 +36,7 @@ const Skills = () => {
                     title: "TypeScript",
                     experience: "4 ans d'expérience",
                     tech: [
-                        <TypeScriptSvg className={"h-6"}/>
+                        <TypeScriptSvg className={"h-3 sm:h-6"}/>
                     ],
                     note: 6
                 },
@@ -45,7 +45,7 @@ const Skills = () => {
                     title: "JavaScript",
                     experience: "5 ans d'expérience",
                     tech: [
-                        <JavaScriptSvg className={"h-6"}/>
+                        <JavaScriptSvg className={"h-3 sm:h-6"}/>
                     ],
                     note: 6
                 },
@@ -54,8 +54,8 @@ const Skills = () => {
                     title: "HTML/CSS",
                     experience: "5 ans d'expérience",
                     tech: [
-                        <HTMLSvg className={"h-7"}/>,
-                        <CSSSvg className={"h-7"}/>,
+                        <HTMLSvg className={"h-4 sm:h-7"}/>,
+                        <CSSSvg className={"h-4 sm:h-7"}/>,
                     ],
                     note: 7
                 },
@@ -64,7 +64,7 @@ const Skills = () => {
                     title: "PHP",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <PhpSvg className={"h-4"}/>
+                        <PhpSvg className={"h-2 sm:h-4"}/>
                     ],
                     note: 3
                 }
@@ -77,7 +77,7 @@ const Skills = () => {
                     title: "React",
                     experience: "4 ans d'expérience",
                     tech: [
-                        <ReactSvg className={"h-7"}/>
+                        <ReactSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 7
                 },
@@ -85,7 +85,7 @@ const Skills = () => {
                     title: "React Native",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <ReactSvg className={"h-7"}/>
+                        <ReactSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 5
                 },
@@ -93,7 +93,7 @@ const Skills = () => {
                     title: "Angular",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <AngularSvg className={"h-7"}/>
+                        <AngularSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 6
                 },
@@ -101,7 +101,7 @@ const Skills = () => {
                     title: "Express js",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <ExpressSvg className={"h-4"}/>
+                        <ExpressSvg className={"h-2 sm:h-4"}/>
                     ],
                     note: 5
                 }
@@ -115,7 +115,7 @@ const Skills = () => {
                     title: "Figma",
                     experience: "3 ans d'expérience",
                     tech: [
-                        <FigmaSvg className={"h-7"}/>
+                        <FigmaSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 7
                 },
@@ -124,7 +124,7 @@ const Skills = () => {
                     title: "Adobe XD",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <AdobeSvg className={"h-5"}/>
+                        <AdobeSvg className={"h-3 sm:h-5"}/>
                     ],
                     note: 3
                 }
@@ -137,7 +137,7 @@ const Skills = () => {
                     title: "Firebase",
                     experience: "3 ans d'expérience",
                     tech: [
-                        <FirebaseSvg className={"h-7"}/>
+                        <FirebaseSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 5
                 },
@@ -145,7 +145,7 @@ const Skills = () => {
                     title: "Mongo DB",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <MongoDBSvg className={"h-7"}/>
+                        <MongoDBSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 3
                 },
@@ -153,7 +153,7 @@ const Skills = () => {
                     title: "Git",
                     experience: "4 ans d'expérience",
                     tech: [
-                        <GitSvg className={"h-7"}/>
+                        <GitSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 6
                 },
@@ -162,7 +162,7 @@ const Skills = () => {
                     title: "DevOps",
                     experience: "1 ans d'expérience",
                     tech: [
-                        <DevOpsSvg className={"h-7"}/>
+                        <DevOpsSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 2
                 },
@@ -171,7 +171,7 @@ const Skills = () => {
                     title: "TailwindCSS",
                     experience: "3 ans d'expérience",
                     tech: [
-                        <TailwindCssSvg className={"h-5"}/>
+                        <TailwindCssSvg className={"h-3 sm:h-5"}/>
                     ],
                     note: 6
                 },
@@ -179,7 +179,7 @@ const Skills = () => {
                     title: "Redux",
                     experience: "2 ans d'expérience",
                     tech: [
-                        <ReduxSvg className={"h-7"}/>
+                        <ReduxSvg className={"h-4 sm:h-7"}/>
                     ],
                     note: 5
                 }
